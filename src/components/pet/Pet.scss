@@ -1,46 +1,112 @@
-.petDisplay{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    position: relative;
-    top: 8em;
-    padding: 20px;
-    background: var(--secondary-color);
-    .img{
-        width: 20%;
-        float: left;
-        img{
-            width: 100%;
-        }
-    }
-    .txt{
-        display: flex;
-        flex-direction: column;
-        gap: 2em;
-        width: 60%;
-        justify-content: center;
-        .info{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            h1{
-                font-family: var(--font-fam);
-            }
-            h5{
-                color: var(--main-color);
-            }
-            p{
-                color: red;
-            }
-        }
-        .more-info{
-            h3{
-                font-family: var(--font-fam);
-            }
-            ul{
-                list-style: none;
+.petDisplay {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  position: relative;
+  top: 5em;
+  padding: 20px;
+  background: var(--secondary-color);
 
-            }
-        }
+  .img {
+    width: 20%;
+    img {
+      width: 100%;
+      display: block;
     }
+  }
+
+  .txt {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 60%;
+    justify-content: center;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      h1 {
+        font-family: var(--font-fam);
+      }
+
+      h5 {
+        color: var(--main-color);
+      }
+
+      p {
+        color: red;
+      }
+    }
+
+    .more-info {
+      h3 {
+        font-family: var(--font-fam);
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .petDisplay {
+    flex-direction: column;
+    align-items: center;
+    top: 4em;
+    padding: 15px;
+    gap: 2em;
+
+    .img {
+      width: 70%;
+      max-width: 300px;
+    }
+
+    .txt {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+
+      .info {
+        align-items: center;
+      }
+
+      .more-info {
+        width: 100%;
+        text-align: left;
+
+        ul {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  .petDisplay {
+    top: 3em;
+
+    .img {
+      width: 85%;
+    }
+
+    .txt {
+      gap: 1.5em;
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+      }
+    }
+  }
 }
