@@ -1,0 +1,36 @@
+.petCats{
+    position: relative;
+    top: 2cm;
+    .cont {
+        display: flex;
+        flex-wrap: wrap;
+        // overflow-x: scroll;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-inline: 2em;
+        gap: 2em;
+
+        .card {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            cursor: pointer;
+
+            p {
+                color: rgb(88, 206, 242);
+            }
+
+            .img {
+                width: 200px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

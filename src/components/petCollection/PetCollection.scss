@@ -1,0 +1,98 @@
+.pets-collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: clamp(20vh, 100vh + 4em, 150vh) !important;
+    gap: 2em;
+
+    h1 {
+        font-family: var(--font-fam);
+    }
+
+    .filter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+
+            li {
+                cursor: pointer;
+                color: var(--main-color);
+                transition: .2s;
+
+                &:hover {
+                    color: var(--main-color);
+                }
+            }
+
+            .tag {
+                color: black;
+
+            }
+
+            .tag.active {
+                font-weight: bold;
+                color: var(--main-color);
+            }
+
+
+
+
+
+
+
+        }
+    }
+
+    .cont {
+        display: flex;
+        flex-wrap: wrap;
+        // overflow-x: scroll;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-inline: 2em;
+        gap: 2em;
+
+        .card {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            cursor: pointer;
+
+            p {
+                color: rgb(88, 206, 242);
+            }
+
+            .img {
+                width: 200px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .pets-collection {
+        padding-inline: 5px;
+        top: 20vh !important;
+        h1 {
+            width: 100%;
+            font-size: 25px;
+        }
+    }
+}

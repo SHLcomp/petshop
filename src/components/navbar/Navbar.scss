@@ -1,0 +1,127 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--navbar-bg);
+    padding-top: 10px;
+    z-index: 800 !important;
+    position: fixed;
+    width: 100%;
+    min-height: 10vh;
+
+
+    h1 {
+        // color: var(--main-color);
+        color: white;
+        filter: drop-shadow(2px 2px 9px black);
+        font-family: 'exbed';
+        font-weight: 600;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        align-items: center;
+
+        li {
+            list-style: none;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .subList {
+            display: none;
+            flex-direction: column !important;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            background: var(--sublist-bg);
+            margin-top: 10px;
+            top: 100%;
+            left: -90%;
+            width: auto;
+            padding: 1vh 2vw;
+            transition: 1s ease;
+
+            &.open {
+                display: flex;
+            }
+        }
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        input {
+            outline: none;
+            border: solid 1px black;
+            padding: 5px 10px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.486);
+        }
+
+        i {
+            color: black;
+            cursor: pointer;
+        }
+    }
+
+    .menubar {
+        display: none;
+        position: absolute;
+        right: 0%;
+        margin-right: 1em;
+        scale: 1.2;
+    }
+}
+
+@media (max-width:600px) {
+    .navbar{
+        flex-direction: column !important;
+        position: relative;
+        gap: .5em;
+        ul{
+            flex-direction: column;
+            width: 100%;
+            padding-block: 1em;
+            position: absolute;
+            top: 100%;
+            left: 100%;
+            transition: .5s;
+            display: none;
+            background: white;
+            &.open{
+                left: 0;
+                display: flex;
+            }
+        }
+        .subList{
+            width: 100% !important;
+            padding-inline: 4em !important;
+            z-index: 200;
+            position: relative;
+            box-shadow: 1px 1px 9px;
+            &::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                filter: blur(10px) !important;
+            }
+        }
+       .menubar{
+        display: block !important;
+        
+        }
+    } 
+    .search{
+        display: none !important;
+    }
+    }
+    

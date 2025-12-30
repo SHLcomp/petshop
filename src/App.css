@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* shared styles */
+.a{
+    color: var(--text);
+    text-decoration: none;
+}
+.cta{
+    background: var(--cta2-bg);
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s ease;
+    color: white;
+    border: none;
+    &:hover{
+        box-shadow: 2px 2px 9px;
+    }
+}
+
+/* root variables */
+:root{
+    --navbar-bg: transparent;
+    --sublist-bg: white;
+    --main-color: rgb(38, 146, 176);
+    --secondary-color: radial-gradient(circle,rgb(233, 195, 148) 0%, rgb(150, 135, 20) 100%);
+    --secondary-color: radial-gradient(circle,rgb(255, 254, 253) 0%, rgb(164, 164, 163) 100%);
+    --hero-bg: radial-gradient(circle,rgba(148, 187, 233, 1) 0%, rgba(28, 76, 199, 1) 100%);
+    /* --hero-bg: radial-gradient(circle,rgb(233, 195, 148) 0%, rgb(150, 135, 20) 100%); */
+    --gray-color: rgb(236, 236, 236);
+    --font-fam: "exbed";
+
+    --cta-bg: rgb(38, 146, 176);
+    --cta2-bg: yellow;
+}
