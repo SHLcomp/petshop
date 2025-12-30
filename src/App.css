@@ -9,6 +9,13 @@ body{
     overflow-x: hidden;
 }
 
+/* fonts */
+@font-face {
+  font-family: "exbed";
+  src: url("././fonts/Exbed.ttf");
+}
+
+
 /* shared styles */
 .a{
     color: var(--text);
