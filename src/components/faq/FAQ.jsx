@@ -15,7 +15,7 @@ const FAQ = () => {
             <img src={img} alt="" />
           </div>
           <div className="text">
-            <h2>Why is adopting the suitable pet is important?</h2>
+            <h2>Why adopting the suitable pet is important?</h2>
             <p>
               Pets are conscious beings, they have souls and emotions. Once a pet
               is used to live in houses it struggles to survive alone outside.
