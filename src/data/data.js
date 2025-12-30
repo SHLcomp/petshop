@@ -25,7 +25,7 @@ const data = [
         id: 3,
         category: "Cats",
         des: "Cats are somewhat independent pets, often requiring less space and exercise than dogs, but long‑haired breeds (like Persian, Scottish Fold) need regular grooming.",
-        name: "Shirazi ( Persian Cat )",
+        name: "Shirazi (Persian Cat)",
         price: 80,
         monthlyCost: "~50–80",
         hobbies: ["walking", "Sleeping", "Playing outside"],
