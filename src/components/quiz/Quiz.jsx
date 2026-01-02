@@ -71,7 +71,7 @@ const Quiz = () => {
 
       {result && (
         <div className="result">
-          <h2>Your best pet is:</h2>
+          <h2>The pet that is most suitable  is:</h2>
           <h2>{result}</h2>
         </div>
       )}
