@@ -4,6 +4,8 @@ import quizData from "../data/quiz";
 export const myCon = createContext(null);
 
 const Provider = ({ children }) => {
+
+  
   const search = () => {
     const searchBox = document.getElementById("search-pet").value.toUpperCase(); // search element
     const storeItems = document.getElementById("pet-list"); // all the available pets

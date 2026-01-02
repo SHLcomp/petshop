@@ -27,7 +27,7 @@ const FAQ = () => {
           <div className="text">
           <h2>Why Care (pet abandonment)?</h2>
           <p>
-            Pet abandonment is a cruel behaviour, most pets don't survive alone
+            Pet abandonment is a cruel behavior, most pets don't survive alone
             when kept outside their houses, they struggle a lot and experience
             tough times, they usually end up dying alone in rough conditions.
           </p>

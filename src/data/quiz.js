@@ -30,8 +30,13 @@ const quiz = [
     type: "yesno"
   },
   {
-    question: "Do you or your family members have allergies to pet fur?",
+    question: "You or your family members have allergies to pet fur?",
     keywords: ["birds", "rabbits"],
+    type: "yesno"
+  },
+  {
+    question: "You and your family members do not have allergies to pet fur?",
+    keywords: ["cats", "dogs"],
     type: "yesno"
   },
   {
