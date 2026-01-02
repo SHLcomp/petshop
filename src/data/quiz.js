@@ -40,7 +40,7 @@ const quiz = [
     keywords: [
         ["birds"],                        // <20 JOD → cheap
         ["cats", "birds", "rabbits"],     // 20-50 JOD
-        ["cats", "dogs", "rabbits"],      // 50-80 JOD
+        ["cats", "dogs"],      // 50-80 JOD
         ["dogs"]                           // 80+ JOD → more expensive dogs
     ], 
     type: "multiple"
@@ -51,7 +51,7 @@ const quiz = [
     keywords: [
       ["birds", "rabbits"],   // Low activity pets
       ["cats"],               // Moderate activity
-      ["dogs"]                // High activity
+      ["dogs", "cats"]                // High activity
     ],
     type: "multiple"
   },
